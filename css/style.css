@@ -1,0 +1,664 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width:320px) and (max-width:479px) {
+    body{
+        width: 100%;
+        min-height: 300px;
+    }
+    main{
+        width: 100%;
+        min-height: 300px;
+        background-color: orange;
+        
+    }
+    
+    .main2{
+        width: 100%;
+        min-height: 200px;
+        background-color: orange;
+    }
+    
+    .main3{
+        width: 100%;
+        min-height: 100px;
+        background-color: orange;
+    }
+    
+    .main4{
+        width: 100%;
+        min-height: 50px;
+        background-color: orange;
+    }
+    header{
+        display: flex;
+        width: 100%;
+        min-height: 60px;
+        background-color: orange;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo{
+        width: 110px;
+    }
+    .navegador__listas{
+        display: flex;
+        
+    }
+    .navegador__listas--li{
+        justify-items: center;
+        font-size: 15px;
+        text-decoration: none;
+        font-weight: bold;
+        list-style: none;
+        padding: 10px;
+    }
+    li a{
+        color: black;
+    }
+    li a:hover{
+        color: yellow;
+    }
+    
+
+
+
+    .portada{
+        width: 100%;
+        height: 200px;
+        background-image: url(/multimedia/titulo.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .portada__contenedor{
+        justify-content: center;
+        align-items: center;
+    }
+    .portada__contenedor--titulo{
+        text-align: center;
+        font-size: 60px;
+        color: orange;
+        text-shadow: 2px 2px 10px orangered ;
+    }
+    .portada__contenedor--subtitulo{
+        text-align: center;
+        font-size: 25px;
+        color: orange;
+        text-shadow: 2px 2px 10px orangered ;
+    }
+    .espacio{
+        width: 100%;
+        height: 50px;
+        background-color: orange;
+        
+    }
+    .parte1{
+        background-color: black;
+        width: 100%;
+    }
+    .subtitulo{
+        justify-content: center;
+        margin-top: -30px;
+        
+    }
+    .subtitulo h2{
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-align:center;
+        border: 5px solid white;
+    }
+    .parte1__contenedor{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 15px ;
+        justify-items: center;
+        grid-template-areas:"energeticas"
+                            "proteicas";
+    }
+    .parte1__subcontenedor{
+        background-color:rgba(216, 166, 29, 0); 
+        width: 250px;
+        height: 300px;
+        text-align: center;
+        
+    }
+    .subcontenedor--energeticas{
+        grid-area: energeticas;
+        border: 5px solid orange ;
+        border-radius: 5px;
+        margin-top: 15px;
+        
+    }
+    .subcontenedor--proteicas{
+        grid-area: proteicas;
+        border: 5px solid orange ;
+        border-radius: 5px;
+        margin-bottom: 40px ;
+    }
+    #energeticas{
+        text-decoration: none;
+        color: white;
+    }
+    #proteicas{
+        text-decoration: none;
+        color: white;
+    }
+    #energeticas:hover{
+        color: rgb(238, 255, 0);
+    }
+    #proteicas:hover{
+        color: rgb(238, 255, 0);
+    }
+
+
+
+
+    .seccion2{
+        width: 100%;
+        height: 400px;
+        display:flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+    
+        
+    }
+    .seccion2__art{
+        font-size: 20x;
+        font-weight:bold;
+        text-align: center;
+        color: white;
+    }
+    .seccion2__art img{
+        width: 80px;
+        height: 80px;
+        border: 7px solid orange;
+        border-radius: 50%;
+    }
+    .seccion3{
+        width: 100%;
+        height: 600px;
+        background-color: orange;
+    }
+    .contenedor2{
+        display: flex; 
+        flex-flow: row wrap;
+        justify-items: center;
+        text-align: center;
+    }
+    .subcontenedor2__div1 img{
+        width: 120px;
+        height: 120px;
+    }
+
+
+
+    .seccion4{
+        width: 100%;
+        min-height: 500px;
+        background-color: black;
+    }
+    .contenedor3{
+        text-align: center ;
+        margin-top: 30px;
+    }
+    .seccion4__art{
+        margin-bottom: 20px;
+    }
+    footer{
+        width: 100%;
+        min-height: 100px;
+        background-color: orange;
+        
+    }
+    .div1{
+        text-align: center;
+        font-size: 25px;
+    }
+    .div2{
+        text-align: center;
+    }
+    .div3{
+        text-align: center;
+    }
+
+
+
+
+    
+    .main4 .art1{
+        margin-top: 15px;
+    }
+    .main4 .subtitulo{
+        margin-top: 25px;
+    }
+    .main4 .barritas{
+        display: grid;
+        grid-template-areas:    "br1"
+                                "br2"
+                                "br3"
+                                "br4"
+                                "br5"
+                                "br6";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 10px;
+        justify-items: center;
+        margin-top: 15px;
+        
+    }
+
+
+
+
+    .somos{
+        width: 100%;
+        min-height: 100px;
+        text-align: center;
+    }
+    .historia{
+        width: 100%;
+        min-height: 100px;
+        margin-top: 35px;
+        text-align: center;
+
+    }
+    .hacemos{
+        width: 100%;
+        min-height: 100px;
+        margin-top: 35px;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+
+
+    .main3 .contac{
+        margin-top: 30px;
+    }
+    .main3 .art1{
+        margin-top: 15px;
+        text-align: center;
+    }
+    .main3 .contac1{
+        margin-top: 30px;
+    }
+}
+
+
+
+
+@media screen and (min-width:978px) {
+    header{
+        height: 80px;
+        width: 100%;
+        background-color: orange;
+        padding: 10px 0 10px 0;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo{
+        width: 150px;
+    }
+    
+    
+    .navegador__listas--li{
+        display: inline-block;
+        list-style: none;
+        font-size: 25px;
+        font-weight: bold;
+        margin-right: 60px;
+        margin-top: 18px;
+    }
+    
+    .anav{
+        text-decoration: none;
+        color: black;
+        
+    }
+    
+    .anav:hover{
+        color: yellow;
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    main{
+        width: 100%;
+        min-height: 300px;
+        background-color: orange;
+        
+    }
+    
+    .main2{
+        width: 100%;
+        min-height: 200px;
+        background-color: orange;
+    }
+    
+    .main3{
+        width: 100%;
+        min-height: 100px;
+        background-color: orange;
+    }
+    
+    .main4{
+        width: 100%;
+        min-height: 50px;
+        background-color: orange;
+    }
+    
+    .portada{
+        width: 100%;
+        height: 760px;
+        background-image: url(/multimedia/titulo.png);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .portada__contenedor--titulo{
+        text-align: center;
+        font-size: 200px;
+        color: orange;
+        padding-top: 150px;
+        text-shadow: 10px  5px 6px black;
+        
+        
+    }
+    
+    .portada__contenedor--subtitulo{
+        text-align: center;
+        font-size: 50px;
+        color: rgb(255, 166, 0);
+        margin-top: 190px;
+        text-shadow: 10px  5px 6px black;
+        
+    }
+    
+    
+    
+    .parte1{
+        background-color: black;
+    }
+    
+    .seccion1{
+        width: 100%;
+        height: 600px;
+        background-color: black;
+        margin-top: 150px;
+    }
+    
+    .subtitulo {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-top: auto;
+    }
+    
+    .subtitulo h2{
+        color: white;
+        font-size: 50px;
+        font-weight: bold;
+        text-align:center;
+        border: 5px solid white;
+    }
+    
+    .parte1__contenedor{
+        margin-top: 70px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    
+    .parte1__subcontenedor{
+        background-color:rgba(216, 166, 29, 0); 
+        width: 310px;
+        height: 310px;
+        text-align: center;
+        
+    }
+    .subcontenedor--energeticas{
+        border: 5px solid orange ;
+        border-radius: 5px;
+        
+    }
+    
+    .subcontenedor--proteicas{
+    
+        border: 5px solid orange ;
+        border-radius: 5px;
+    }
+    
+    #energeticas{
+        text-decoration: none;
+        color: white;
+    }
+    
+    #proteicas{
+        text-decoration: none;
+        color: white;
+    }
+    
+    #energeticas:hover{
+        color: rgb(238, 255, 0);
+    }
+    
+    #proteicas:hover{
+        color: rgb(238, 255, 0);
+    }
+    
+    .imgenergeticas{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .imgproteicas{
+        width: 300px;
+        height: 300px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    .seccion2{
+        width: 100%;
+        height: 300px;
+        background-color: black;
+        margin-top: 100px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    
+    .seccion2__art{
+        font-size: 30px;
+        font-weight:bold;
+        text-align: center;
+        color: white;
+    }
+    
+    .seccion2__art img{
+        width: 150px;
+        height: 150px;
+        border: 7px solid orange;
+        border-radius: 50%;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    .seccion3{
+        width: 100%;
+        min-height: 800px;
+    }
+    
+    .subcontenedor2{
+        display: grid;
+        grid-template-areas: "img text";
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr ;
+        margin-top: 100px;
+    }
+
+    .subcontenedor2__div1{
+        grid-area: img;
+    }
+    .subcontenedor2__div2{
+        grid-area: text;
+    }
+    
+    .subcontenedor2 img{
+        width: 300px;
+        height: 300px;
+        margin-left: 100px;
+    }
+    
+    .subcontenedor2 p{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin: 5% 0 0 50px;
+    }
+    
+    .subcontenedor3{
+        display: grid;
+        grid-template-areas: "text img";
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr ;
+        margin-top: 100px;
+    }
+    .subcontenedor3__div1{
+        grid-area: img;
+    }
+    .subcontenedor3__div2{
+        grid-area: text;
+    }
+    
+    .subcontenedor3 img{
+        width: 300px;
+        height: 300px;
+        margin-right: 100px;
+    }
+    
+    .subcontenedor3 p{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin: 5% 50px 0 0;
+    }
+    
+    
+    
+    
+    
+    
+    
+    .seccion4{
+        width: 100%;
+        min-height: 800px;
+        background-color: black;
+        margin-top: 100px;
+    }
+    
+    .contenedor3{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        margin-top: 100px;
+    }
+    
+    .seccion4__art{
+        border: 5px solid white;
+    }
+    
+    .seccion4__art img{
+        width: 400px;
+        height: 400px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    footer{
+        width: 100%;
+        height: 200px;
+        background-color: orange;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    footer .div1 h3{
+        font-size: 30px;
+        
+    }
+    
+    footer .div2 h3{
+        font-size: 40px;
+        text-align: center;
+    }
+    footer .div3{
+        font-size: 30px;
+        text-align: center;
+    }
+    footer .div3 p{
+        font-size: 15px;
+    }
+
+
+
+
+
+
+    .main4 .art1{
+        margin-top: 15px;
+        text-align: center;
+    }
+    .main4 .subtitulo{
+        margin-top: 25px;
+    }
+    .main4 .barritas{
+        display: grid;
+        grid-template-areas:    "br1 br2 br3"
+                                "br4 br5 br6";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 10px;
+        justify-items: center;
+        margin-top: 15px;
+        
+    }
+    .main3 .contac{
+        margin-top: 30px;
+    }
+    .main3 .art1{
+        margin-top: 15px;
+        text-align: center;
+    }
+    .main3 .contac1{
+        margin-top: 30px;
+    }
+}
+
